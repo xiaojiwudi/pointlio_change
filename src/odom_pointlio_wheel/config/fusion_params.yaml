@@ -1,0 +1,37 @@
+# config/fusion_params.yaml
+# ─────────────────────────────────────────────
+# Point-LIO × 轮式里程计 EKF 融合参数
+# ─────────────────────────────────────────────
+
+odom_fusion:
+  ros__parameters:
+
+    # ── 话题 ──────────────────────────────────
+    lio_topic:   "/Odometry"      # Point-LIO 输出话题
+    wheel_topic: "/wheel_odom"    # 轮式里程计话题
+
+    # ── 坐标系 ────────────────────────────────
+    frame_id:    "odom"
+    child_frame: "base_link"
+
+    # ── 过程噪声（越大 = 越信任观测）─────────
+    q_pos: 0.01    # 位置过程噪声 [m²/s]
+    q_vel: 0.10    # 速度过程噪声 [m²/s³]
+    q_att: 0.005   # 姿态过程噪声 [rad²/s]
+
+    # ── LIO 观测噪声 ──────────────────────────
+    # 值越小 = 越信任 LIO
+    r_lio_pos:  0.05   # 位置噪声 [m²]
+    r_lio_vel:  0.10   # 速度噪声 [(m/s)²]
+    r_lio_att:  0.02   # 姿态噪声 [rad²]
+
+    # ── 轮式观测噪声 ──────────────────────────
+    # vy 设较大：轮式侧向速度不可靠
+    r_wheel_vx:  0.05   # 前向速度噪声 [(m/s)²]
+    r_wheel_vy:  0.50   # 侧向速度噪声 [(m/s)²]
+    r_wheel_yaw: 0.05   # (预留，暂未使用) [rad²]
+
+    # ── 轮式外参（轮式坐标系 → LIO body 系）──
+    wheel_offset_x:   0.0   # x 平移 [m]
+    wheel_offset_y:   0.0   # y 平移 [m]
+    wheel_offset_yaw: 0.0   # yaw 旋转 [rad]

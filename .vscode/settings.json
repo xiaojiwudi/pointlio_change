@@ -1,0 +1,16 @@
+{
+    "cmake.sourceDirectory": "/home/sb/pointlio_change/src/livox_ros_driver2",
+    "ROS2.distro": "humble",
+    "python.autoComplete.extraPaths": [
+        "/home/sb/pointlio_change/install/livox_ros_driver2/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/opt/drake/lib/python3.10/site-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/sb/pointlio_change/install/livox_ros_driver2/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "/opt/drake/lib/python3.10/site-packages"
+    ]
+}

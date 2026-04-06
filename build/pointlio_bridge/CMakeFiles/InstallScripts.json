@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/sb/pointlio_change/build/pointlio_bridge/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/sb/pointlio_change/build/odom_pointlio_wheel/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

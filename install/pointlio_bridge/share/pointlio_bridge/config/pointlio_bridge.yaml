@@ -1,0 +1,11 @@
+pointlio_lego:
+  ros__parameters:
+
+
+    voxel_leaf_size_ground: 0.3
+    curvature_threshold: 0.1
+    planar_threshold: 0.05
+    ransac_distance_threshold: 0.06
+    map_publish_period: 1.0
+    map_save_dir: "/tmp/lego_maps"
+    map_save_prefix: "lego_map_mid360"

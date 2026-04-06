@@ -1,0 +1,4 @@
+source;share/odom_pointlio_wheel/local_setup.bash
+source;share/odom_pointlio_wheel/local_setup.dsv
+source;share/odom_pointlio_wheel/local_setup.sh
+source;share/odom_pointlio_wheel/local_setup.zsh
